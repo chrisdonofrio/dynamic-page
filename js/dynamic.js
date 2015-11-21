@@ -5,7 +5,16 @@ function clkDelete(){
   if(check === 'true'){
     this.remove();
   }
-  
+
 }
+
+function hoverParents(){
+  $("#displayParents").html(this.parents());
+
+}
+
+
+
+
 
 });
