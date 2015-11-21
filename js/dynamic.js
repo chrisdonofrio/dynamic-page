@@ -27,4 +27,14 @@ $("#inputBtn").on("click", function() {
   $("body").append(newInput);
 });
 
+$("#spanBtn").on("click", function() {
+  var newSpan = $("<span>").addClass("red");
+  $("body").append(newSpan);
+});
+
+$("#tableBtn").on("click", function() {
+  var newInput = $("<input>").attr("type", "checkbox");
+  $("body").append(newInput);
+});
+
 });
