@@ -33,8 +33,25 @@ $("#spanBtn").on("click", function() {
 });
 
 $("#tableBtn").on("click", function() {
-  var newInput = $("<input>").attr("type", "checkbox");
-  $("body").append(newInput);
+  var newTable = $("<table>").addClass("table").append(newRow);
+  var newRow = $("<tr>").append(newCol);
+  var newCol = $("<td>");
+  $("body").append(newTable);
+});
+
+$("#buttonBtn").on("click", function() {
+  var newButton = $("<button>").addClass("btn btn-block");
+  $("body").append(newButton);
+});
+
+$("#paraBtn").on("click", function() {
+  var newPara = $("<p>").append(document.createTextNode("al;ksdfjl;kasjdflkasjdf;lkasjdf;lkj;aslkdfjaslk;dfjaskldfjkl;asdjflk;adsjflk;asjdf;lk"));
+  $("body").append(newPara);
+});
+
+$("#divBtn").on("click", function() {
+  var newDiv = $("<div>").addClass("blue");
+  $("body").append(newDiv);
 });
 
 });
