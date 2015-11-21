@@ -20,9 +20,13 @@ function hoverParents(){
 
 function create(){
 
-
+  var newInput = $("<input>").attr("type", "checkbox");
+  $("body").append(newInput);
 }
 
-
+$("#inputBtn").on("click", function() {
+  var newInput = $("<input>").attr("type", "checkbox");
+  $("body").append(newInput);
+});
 
 });
