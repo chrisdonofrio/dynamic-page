@@ -1,9 +1,14 @@
-document.ready(function(){
+$(document).ready(function(){
+
+$(".btn-primary").each(function(){
+
+  $(this).on("click", create());
+})
 
 function clkDelete(){
   var check = window.confirm("Are you sure you want to delete?")
   if(check === 'true'){
-    this.remove();
+    $(this).remove();
   }
 
 }
@@ -13,7 +18,10 @@ function hoverParents(){
 
 }
 
+function create(){
 
+
+}
 
 
 
